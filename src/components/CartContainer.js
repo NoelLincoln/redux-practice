@@ -6,6 +6,8 @@ const CartContainer = () => {
   const dispatch = useDispatch();
   const { cartItems, total, amount } = useSelector((store) => store.cart);
 
+  console.log(cartItems);
+
   if (amount < 1) {
     return (
       <section className="cart">
